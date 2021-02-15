@@ -23,6 +23,12 @@ const mal_aut = function(){
     });
   }
 
+  function clear(){
+    chrome.storage.local.clear(function(){
+      window.close();
+    });
+  }
+
   function register(){
     let code_v = makeid(128);
     let code_c = code_v;
@@ -129,6 +135,7 @@ const mal_aut = function(){
     init: init,
     isregistered: isregistered,
     register: register,
-    get_atoken: get_atoken
+    get_atoken: get_atoken,
+    clear:clear
   }
 }()
