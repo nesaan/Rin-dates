@@ -56,7 +56,7 @@ const malr = function(){
           else if (http.readyState == 4 && http.status == 401){
             mal_aut.clear();
           }
-          else {
+          else if (http.readyState == 4 ){
             reject(http.code);
           }
         }
