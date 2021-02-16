@@ -4,7 +4,6 @@
   "version": "1.0",
   "description": "Quick Updates to Mal",
   "permissions": [
-    "activeTab",
     "storage",
     "identity",
     "https://myanimelist.net/*",
